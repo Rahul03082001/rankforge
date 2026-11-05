@@ -7,7 +7,7 @@
 - Playwright Chromium: **4 passed** on the fixture application. **5 passed on the final full-corpus production image in 5.8 seconds**, including a missing-artifact/null-metadata regression. Includes keyboard search/modes, source focus/back, stale responses, errors, comparison/evaluation, mobile overflow, and axe.
 - Public GitHub Actions execution: not run. Workflow files provided.
 - Manual VoiceOver/zoom audit: pending human review; no blanket WCAG conformance claim.
-- Git repository initialized; no commit or remote publication.
+- Git repository initialized; initial commit `78f060a` covering 73 files. No remote publication.
 
 ## Full FiQA experiment
 57,638 source documents; 5,500 train / 500 dev / 648 test queries. Official split IDs disjoint, source IDs valid.
