@@ -1,0 +1,28 @@
+{
+  "workload": "closed-loop; fixed four-query cycle; LTR; ten warmups",
+  "requests": 1000,
+  "concurrency": 4,
+  "elapsed_seconds": 0.5259448340002564,
+  "achieved_qps": 1901.3400937778058,
+  "successful_qps": 15.210720750222446,
+  "errors": 992,
+  "error_rate": 0.992,
+  "latency_sample_count": 8,
+  "status_counts": {
+    "200": 8,
+    "429": 992
+  },
+  "tail_estimate_note": "p95/p99 suppressed when fewer than 100 successes",
+  "first_request_ms": 153.9731250013574,
+  "first_request_status": 200,
+  "cold_start_note": "First request in this process, not measured container startup. Model startup measured separately.",
+  "latency_success_ms": {
+    "p50": 70.51864600180124,
+    "p95": null,
+    "p99": null
+  },
+  "corpus_documents": 57638,
+  "bundle_version": "c9453e52b2c88ac41813ec0e71ec875b6311eb9405759f297bc826b896e39330",
+  "client_hardware": "Linux-7.0.14-linuxkit-aarch64-with-glibc2.36",
+  "server_hardware": "Record Docker CPU/memory allocation in release notes"
+}

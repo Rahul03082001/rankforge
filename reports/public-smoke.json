@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-11-04T15:30:01.229611+00:00",
+  "url": "https://rankforge-hg5yrz427q-ue.a.run.app",
+  "scope": "public HTTPS",
+  "authenticated": false,
+  "documents": 57638,
+  "bundle_sha256": "c9453e52b2c88ac41813ec0e71ec875b6311eb9405759f297bc826b896e39330",
+  "modes": {
+    "bm25": {
+      "first_document": "327432",
+      "server_ms": 8.52
+    },
+    "dense": {
+      "first_document": "595476",
+      "server_ms": 336.57
+    },
+    "hybrid": {
+      "first_document": "327432",
+      "server_ms": 42.86
+    },
+    "ltr": {
+      "first_document": "595476",
+      "server_ms": 44.18
+    }
+  },
+  "evaluation_reports": 2,
+  "result": "passed"
+}

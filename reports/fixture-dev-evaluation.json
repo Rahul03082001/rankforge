@@ -1,0 +1,93 @@
+{
+  "bundle_sha256": "8cf8622f9980515f08fbe2d30cbdcd740fd5a7f7d3f91836161762e44db86b6d",
+  "candidate_policy": "100 per retriever; RRF 60; LTR reorders top 100 hybrid; positive relevance >=1",
+  "created": "2026-11-03T21:41:15.516596+00:00",
+  "documents": 12,
+  "metrics": {
+    "bm25": {
+      "aggregate": {
+        "R@100": 1.0,
+        "RR@10": 1.0,
+        "nDCG@10": 1.0
+      },
+      "per_query": {
+        "dv1": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "dv2": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        }
+      }
+    },
+    "dense": {
+      "aggregate": {
+        "R@100": 1.0,
+        "RR@10": 1.0,
+        "nDCG@10": 1.0
+      },
+      "per_query": {
+        "dv1": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "dv2": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        }
+      }
+    },
+    "hybrid": {
+      "aggregate": {
+        "R@100": 1.0,
+        "RR@10": 1.0,
+        "nDCG@10": 1.0
+      },
+      "per_query": {
+        "dv1": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "dv2": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        }
+      }
+    },
+    "ltr": {
+      "aggregate": {
+        "R@100": 1.0,
+        "RR@10": 0.5555555555555556,
+        "nDCG@10": 0.6505149978319906
+      },
+      "per_query": {
+        "dv1": {
+          "R@100": 1.0,
+          "RR@10": 1.0,
+          "nDCG@10": 1.0
+        },
+        "dv2": {
+          "R@100": 1.0,
+          "RR@10": 0.1111111111111111,
+          "nDCG@10": 0.3010299956639812
+        }
+      }
+    }
+  },
+  "model_revision": "b207367332321f8e44f96e224ef15bc607f4dbf0",
+  "profile": "fixture",
+  "qrels_sha256": "e99069578c4eabe9974f7bd717a327f02af59af30a017adab4355673324985eb",
+  "queries": 2,
+  "query_ids": [
+    "dv1",
+    "dv2"
+  ],
+  "split": "dev"
+}

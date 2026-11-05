@@ -1,0 +1,13 @@
+{
+  "restart_to_ready_seconds": 4.073835333000001,
+  "same_bundle": true,
+  "bundle_version": "c9453e52b2c88ac41813ec0e71ec875b6311eb9405759f297bc826b896e39330",
+  "documents": 57638,
+  "available_modes": [
+    "bm25",
+    "dense",
+    "hybrid",
+    "ltr"
+  ],
+  "measurement": "docker compose restart invocation through successful readiness poll; includes Docker restart overhead"
+}

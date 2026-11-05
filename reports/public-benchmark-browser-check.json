@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-11-04T22:59:24.781550+00:00",
+  "url": "https://rankforge-hg5yrz427q-ue.a.run.app",
+  "revision": "rankforge-00003-nfp",
+  "method": "Browser UI inspection",
+  "result": "passed",
+  "checks": [
+    "Navigation, breadcrumb, and heading read Benchmark result",
+    "Explanation distinguishes saved development/test averages from current-query rankings",
+    "Development table: 500 queries, 57638 documents, four methods",
+    "Test table: 648 queries, 57638 documents, four methods",
+    "Desktop layout visually inspected"
+  ],
+  "screenshot": "reports/public-benchmark-result.jpg"
+}

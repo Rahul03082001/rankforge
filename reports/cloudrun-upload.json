@@ -1,0 +1,6 @@
+{
+  "archive": ".deploy/rankforge-cloudrun-v2.tar.gz",
+  "bytes": 206227042,
+  "sha256": "8cc8ca327f77ab3c5efe9ef8090b8c3d5032c1dc9956be6a38265c47aba99520",
+  "status": "uploaded to authorized Google Cloud Shell; matching SHA-256 verified"
+}

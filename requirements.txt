@@ -1,0 +1,15 @@
+fastapi==0.115.8
+uvicorn==0.34.0
+pydantic==2.10.6
+numpy==1.26.4
+scipy==1.15.1
+bm25s==0.2.6
+faiss-cpu==1.10.0
+torch==2.6.0
+sentence-transformers==3.4.1
+transformers==4.48.3
+huggingface-hub==0.28.1
+xgboost==2.1.4
+ir-measures==0.3.7
+pytest==8.3.4
+httpx==0.28.1

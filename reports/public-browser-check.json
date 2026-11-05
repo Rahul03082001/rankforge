@@ -1,0 +1,17 @@
+{
+  "url": "https://rankforge-hg5yrz427q-ue.a.run.app",
+  "revision": "rankforge-00002-gfh",
+  "result": "passed",
+  "method": "in-app browser via CUA",
+  "checks": [
+    "ready homepage",
+    "keyboard search: interest rates, 10 results",
+    "source document opens with heading focus",
+    "back to results restores link focus",
+    "all four comparison columns complete",
+    "dev and test evaluation tables load"
+  ],
+  "screenshot": "reports/public-search.jpg",
+  "manual_voiceover": "pending",
+  "automated_axe": "passed locally before deployment; not rerun remotely"
+}

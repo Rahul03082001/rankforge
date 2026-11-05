@@ -1,0 +1,12 @@
+.git
+.cache
+data
+artifacts
+**/node_modules
+frontend/test-results
+frontend/playwright-report
+**/__pycache__
+.pytest_cache
+.deploy
+**/.DS_Store
+.env*

@@ -1,0 +1,10 @@
+{
+  "scope": "local native ARM64 constraint test, not a provider deployment",
+  "memory_bytes": 536870912,
+  "cpu_cores": 0.5,
+  "swap_allowed": false,
+  "result": "startup failed",
+  "oom_killed": true,
+  "exit_code": 137,
+  "production_service_affected": false
+}

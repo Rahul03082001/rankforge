@@ -1,0 +1,21 @@
+services:
+  tools:
+    build:
+      context: .
+      dockerfile: Dockerfile.tools
+    image: rankforge-tools:local
+    volumes:
+      - .:/app
+    environment:
+      PYTHONPATH: /app/backend
+      HF_HOME: /app/.cache/huggingface
+      OMP_NUM_THREADS: "4"
+      TOKENIZERS_PARALLELISM: "false"
+  web:
+    build: .
+    image: rankforge:local
+    ports:
+      - "7860:7860"
+    environment:
+      RANKFORGE_BUNDLE: /app/artifacts/fiqa-ltr
+      PORT: "7860"
