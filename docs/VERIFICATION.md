@@ -60,7 +60,7 @@ Final image ID: sha256:cf41c0af697208b79a6c91195dcc067f478c760c16405c22d02ab44f7
 ## Public Cloud Run release — 2026-11-04
 
 - Live: https://rankforge-hg5yrz427q-ue.a.run.app
-- Final ready revision `rankforge-00002-gfh`, serving 100% of traffic; one CPU, 1 GiB memory, HTTP concurrency eight, minimum zero/maximum one instance, startup CPU boost, request-based billing. Existing unupgraded free trial; no paid billing upgrade.
+- Release revision `rankforge-00002-gfh`, serving 100% of traffic at the time of this release; one CPU, 1 GiB memory, HTTP concurrency eight, minimum zero/maximum one instance, startup CPU boost, request-based billing. Existing unupgraded free trial; no paid billing upgrade. The later Benchmark-result rename deployed `rankforge-00003-nfp`, which keeps these settings and the same bundle and is the revision now serving; see docs/DEPLOYMENT.md.
 - CPU-only AMD64 image built and checked locally with emulation, then rebuilt and checked natively in Cloud Shell. All four inference modes passed offline under a 1 GiB/no-swap limit.
 - External unauthenticated checks passed initially and after a fresh revision: homepage, readiness, all four search modes, source-prefix consistency, expected invalid-query/missing-document responses, and two reports matching the same immutable bundle.
 - Public browser checks passed for keyboard search, source heading focus and back-focus restoration, all four comparison columns, and dev/test evaluation tables. Screenshot: reports/public-search.jpg. The automated axe/Playwright results above are local results; they were not rerun remotely.
