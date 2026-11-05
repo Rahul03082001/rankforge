@@ -5,7 +5,7 @@
 - Frontend dependency audit after updating Vite/Playwright: zero reported vulnerabilities.
 - pytest: **13 passed** in 10.22 seconds; two dependency deprecation warnings. Includes real full-corpus embedding/ranker integration; hand-calculated BM25; known FAISS vectors; missing ranks/ties; stable mapping and reindexing; split separation and guarded training label reads; shared feature/prediction equivalence; artifact corruption/schema/mapping checks; API validation/readiness; bounded concurrent requests.
 - Playwright Chromium: **4 passed** on the fixture application. **5 passed on the final full-corpus production image in 5.8 seconds**, including a missing-artifact/null-metadata regression. Includes keyboard search/modes, source focus/back, stale responses, errors, comparison/evaluation, mobile overflow, and axe.
-- Public GitHub Actions execution: not run. Workflow files provided.
+- Public GitHub Actions execution: the `correctness` workflow passed on commit `eb6f6a5` (run 41952561001, Ubuntu 26.04 x86_64 runners): 12 unit and 1 integration backend checks, a frontend build, and 5 Playwright/axe checks against a container built by the fixture pipeline in CI. That run rebuilt the fixture index and trained its ranker from scratch on a different architecture and reproduced the fixture LTR nDCG@10 of 0.6781035935540111 exactly, matching the local ARM64 result. The manual `full-corpus-evaluation` workflow has not been run.
 - Manual VoiceOver/zoom audit: pending human review; no blanket WCAG conformance claim.
 - Git repository initialized; initial commit `78f060a` covering 73 files. No remote publication.
 

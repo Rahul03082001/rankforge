@@ -1,6 +1,8 @@
 # RankForge
 ### Hybrid search & learning-to-rank, made inspectable.
 
+[![correctness](https://github.com/Rahul03082001/rankforge/actions/workflows/ci.yml/badge.svg)](https://github.com/Rahul03082001/rankforge/actions/workflows/ci.yml)
+
 Compare keyword retrieval, semantic retrieval, reciprocal rank fusion, and supervised XGBoost reranking over the same financial Q&A collection. Open a source document, compare rankings, and inspect measured evaluation results.
 
 **Live demo: [Open RankForge](https://rankforge-hg5yrz427q-ue.a.run.app).** All four modes work over 57,638 FiQA documents. Public HTTPS/API, browser navigation, comparison, evaluation, and fresh-revision checks passed. The local release also passed 13 backend and 5 browser checks. Hosting uses an unupgraded Google Cloud Free Trial, shown as expiring February 2, 2027; no paid upgrade was performed. See [deployment details](docs/DEPLOYMENT.md) and [verification evidence](docs/VERIFICATION.md).
@@ -103,6 +105,6 @@ Closed-loop workloads, four repeated queries, ten warmups. Reports include succe
 
 ## Release and demo
 
-See [deployment](docs/DEPLOYMENT.md) and [five-minute demo](docs/DEMO.md). The public Cloud Run service scales to zero and is capped at one instance. Hosting stops when the unupgraded trial expires or its credits are exhausted. CI is supplied; local test passes do not claim GitHub Actions has run.
+See [deployment](docs/DEPLOYMENT.md) and [five-minute demo](docs/DEMO.md). The public Cloud Run service scales to zero and is capped at one instance. Hosting stops when the unupgraded trial expires or its credits are exhausted. The `correctness` workflow runs on every push and covers backend tests, the frontend build, and the fixture pipeline with browser checks; the full-corpus evaluation workflow is manual.
 
 Application/authored fixture: MIT. Dataset/model licenses are separate. [AI assistance and human review](docs/AI_USAGE.md).
