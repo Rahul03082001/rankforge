@@ -2,7 +2,7 @@
 
 Created: 2026-11-03
 
-These are implementation decisions for **RankForge — Hybrid Search & Learning-to-Rank Platform**. Local implementation and measured experiment evidence are recorded below. Public hosting and human accessibility review remain pending.
+These are implementation decisions for **RankForge — Hybrid Search & Learning-to-Rank Platform**. Local implementation, measured experiment evidence, and public deployment are recorded below. Human accessibility review remains pending.
 
 ## Maintaining this log
 
@@ -24,7 +24,7 @@ Record real file paths, test names, commands, results, and commits. Leave unknow
 | ADR-008 | Ship immutable, compatible index/model artifacts | Accepted | Verified |
 | ADR-009 | Evaluate correctness, relevance, and latency separately | Accepted | Verified |
 | ADR-010 | Treat accessibility as tested behavior with documented limits | Accepted | Verified |
-| ADR-011 | Deploy a portable public Docker app within an approved budget | Accepted | Implemented, not verified |
+| ADR-011 | Deploy a portable public Docker app within an approved budget | Accepted | Verified |
 
 ## ADR-001: Two complete stages before distributed extensions
 
@@ -128,13 +128,13 @@ Record real file paths, test names, commands, results, and commits. Leave unknow
 
 ## ADR-011: Portable public deployment with an explicit budget
 
-- Date/status: 2026-11-03; Accepted; Implemented, not verified.
+- Date/status: 2026-11-03; Accepted; Verified.
 - Context: The portfolio needs a real public search URL, while hosting resources and costs are not yet chosen.
 - Options: A compatible Docker host using an existing account; a Hugging Face Docker Space if eligible; local-only operation until hosting is available.
 - Choice: Produce one portable image first, measure resource requirements, and select an authorized host. Complete deployment only after public smoke tests pass.
 - Reason: Portability separates application correctness from account/provider constraints.
 - Trade-off: Hosting may require an account, billing, or paid resources. Provider eligibility and prices must be verified when a host is selected. A local URL or hosted screenshot is not a live backend.
-- Evidence/commit: Portable Docker packaging is implemented. Public host/account, plan/budget, HTTPS URL, and public smoke/restart checks remain pending. No hosting resource purchased or public URL claimed. Source commit: 78f060a.
+- Evidence/commit: Portable Docker packaging is implemented. Deployed publicly on 2026-11-04 to Google Cloud Run at https://rankforge-hg5yrz427q-ue.a.run.app, revision `rankforge-00003-nfp`, one CPU and 1 GiB, scale-to-zero, maximum one instance, on an existing unupgraded Free Trial; no paid upgrade was performed. Unauthenticated external checks passed for readiness, all four search modes, source-prefix consistency, expected invalid-query and missing-document responses, and two evaluation reports matching the served bundle c9453e52; the checks were repeated after a fresh revision. Public browser checks passed for keyboard search, source heading focus and back-focus restoration, all four comparison columns, and both benchmark tables. No hosted load-capacity or idle-to-active cold-start measurement is claimed, and the local axe/Playwright results were not rerun remotely. Hosting ends when the trial shown as expiring 2027-02-02 lapses. Evidence: reports/deployment.json, reports/public-smoke.json, reports/public-restart-smoke.json, reports/public-browser-check.json, reports/cloudrun-image-check.json, and docs/VERIFICATION.md. Source commit: 78f060a.
 
 ## Future-entry template
 
